@@ -9,50 +9,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.jarman.touchstone.moshihor.Requisition">
 
-<LinearLayout
+<Spinner
     android:layout_width="match_parent"
-    android:id="@+id/b"
-    android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="BFTN: "
-        android:id="@+id/bft"
-        android:layout_alignParentTop="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_weight="1" />
-
-</LinearLayout>
+    android:id="@+id/which"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_height="wrap_content"></Spinner>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/c"
-        android:layout_below="@+id/b">
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="CHEQUE: "
-            android:id="@+id/chq"
-            android:layout_alignParentTop="true" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/which">
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:hint="Amount"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/check"
+            android:id="@+id/amount"
             android:layout_weight="1" />
 
     </LinearLayout>
     <Button android:gravity="right" android:layout_marginTop="50dp" android:id="@+id/apply" android:background="@drawable/apply_button" android:layout_width="200.0dip" android:layout_height="85.0dip" android:layout_below="@id/c" android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

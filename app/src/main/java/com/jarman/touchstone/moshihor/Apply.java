@@ -88,7 +88,7 @@ public class Apply extends Activity
         ((Button)findViewById(R.id.requi)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Apply.this,Requisition.class));
+                startActivity(new Intent(Apply.this,Requisition.class).putExtras(getIntent().getExtras()));
             }
         });
         ((Button)findViewById(R.id.apply)).setOnClickListener(new View.OnClickListener() {
