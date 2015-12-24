@@ -64,7 +64,7 @@ Spinner spinner;
             public void onClick(View v) {
                 if (isNetworkAvailable()) {
                     if(!amount.getText().toString().isEmpty()) {
-                        if (Integer.parseInt(amount.getText().toString()) >= 500) {
+                        if (Long.parseLong(amount.getText().toString()) >= 500) {
 
                             progressDialog.setMessage("Applying......");
                             progressDialog.show();
